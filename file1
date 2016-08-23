@@ -1,0 +1,19 @@
+DROP TABLE IF EXISTS anagrafica;
+CREATE TABLE anagrafica(id Integer Primary Key AUTOINCREMENT,  name    text, straniero Bit
+                         );
+
+  INSERT INTO anagrafica (name,straniero) VALUES ('JOHNSON','YES');
+  INSERT INTO anagrafica (name,straniero) VALUES ('HARDING','YES');
+  INSERT INTO anagrafica (name,straniero) VALUES ('TAFT','YES');
+  INSERT INTO anagrafica (name,straniero) VALUES ('MARINELLI','NO');
+  INSERT INTO anagrafica (name,straniero) VALUES ('LINCOLN','YES');
+  INSERT INTO anagrafica (name,straniero) VALUES ('ANTONINI','NO');
+  INSERT INTO anagrafica (name,straniero) VALUES ('POLK','YES');
+  INSERT INTO anagrafica (name,straniero) VALUES ('BAGLIONI','NO');
+  INSERT INTO anagrafica (name,straniero) VALUES ('JACKSON','YES');
+  INSERT INTO anagrafica (name,straniero) VALUES ('ALUNNI','NO');
+ 
+
+SELECT * FROM anagrafica WHERE straniero='YES';
+SELECT  COUNT(*) FROM anagrafica WHERE straniero='YES';
+SELECT * FROM anagrafica WHERE id='6'
